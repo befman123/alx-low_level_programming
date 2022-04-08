@@ -1,6 +1,7 @@
 #include <stdio.h>
-int main(void) /* Prints set of caharcters to the outputstream*/
-{  
+/*Prints to the output stream*/
+int main(void)
+{
 char phrase[] = "\"Programming is like building a multilingual puzzle";
 
 puts(phrase);
