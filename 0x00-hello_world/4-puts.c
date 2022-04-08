@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /*Prints to the output stream*/
 int main(void)
 {
