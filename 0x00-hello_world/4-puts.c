@@ -1,9 +1,11 @@
 #include <stdio.h>
-/* Prints a set of characters to the output stream */
-int main(void){
-char phrase_to_be_displayed[] = "\"Programming is like building a multilingual puzzle";
+int main(void)
+{
+/* prints a set of characters to the output stream */  
 
-puts(phrase_to_be_displayed);
+char phrase[] = "\"Programming is like building a multilingual puzzle";
+
+puts(phrase);
 
 return (0);
 }
