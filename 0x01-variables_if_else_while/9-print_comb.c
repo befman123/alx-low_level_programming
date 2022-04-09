@@ -11,7 +11,10 @@
 		if (i == 57)
 			continue;
 		else
+		{
 			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 
