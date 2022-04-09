@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- *Print numbers 0 through9 using for loop
+ *Print numbers 0-9 using for loop
  */int main(void)
 {
 	int i;
