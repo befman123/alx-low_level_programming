@@ -11,7 +11,7 @@
 		for (j = 48; j < 58; j++)
 			for (k = 48; k < 58; k++)
 			{
-				if (i == j || i == k ||j == k)
+				if (i == j || i == k || j == k)
 					continue;
 				if (i == j && j == k)
 					continue;
