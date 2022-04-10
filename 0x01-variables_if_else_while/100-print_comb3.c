@@ -15,8 +15,13 @@
 			{
 				putchar(i);
 				putchar(j);
-				putchar(',');
-				putchar(' ');
+				if (i == 56 && j == 57)
+					continue;
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	putchar('\n');
