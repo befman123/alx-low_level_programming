@@ -37,9 +37,12 @@
 			{
 				int mod = mul % 10;
 				int div = mul / 10;
+				int other_mod;
 
-				_putchar(div / 10 + '0');
-				_putchar(div % 10 + '0');
+				other_mod = div % 10
+				div /= 10;
+				_putchar(div + '0');
+				_putchar(other_mod % 10 + '0');
 				_putchar(mod + '0');
 			}
 			if (j != (n - 1))
