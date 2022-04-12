@@ -56,4 +56,6 @@
 		_putchar('\n');
 	}
 	}
+	else
+		continue;
 }
