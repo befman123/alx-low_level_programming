@@ -39,7 +39,7 @@
 				int div = mul / 10;
 				int other_mod;
 
-				other_mod = div % 10
+				other_mod = div % 10;
 				div /= 10;
 				_putchar(div + '0');
 				_putchar(other_mod % 10 + '0');
