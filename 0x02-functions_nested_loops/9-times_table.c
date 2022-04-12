@@ -14,7 +14,7 @@
 			mul = i * j;
 			if (mul < 10)
 			{
-				if(j != 0)
+				if (j != 0)
 					_putchar(' ');
 				_putchar(mul + '0');
 			}
@@ -27,8 +27,11 @@
 				_putchar(div + '0');
 				_putchar(mod + '0');
 			}
-			_putchar(44);
-			_putchar(' ');
+			if (i != 9 && j != 9)
+			{
+				_putchar(44);
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
