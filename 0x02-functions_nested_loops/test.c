@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    times_table();
+    add(89, 9);
 
     return (0);
 }
