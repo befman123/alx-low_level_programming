@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -7,7 +8,9 @@
  */
 int main(void)
 {
-	jack_bauer();
+
+	printf("%d \n", _abs(1));
+	printf("%d \n", _abs(0));
 
 	return (0);
 }
