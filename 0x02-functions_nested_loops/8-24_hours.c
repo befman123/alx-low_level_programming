@@ -12,7 +12,7 @@
 	for(i = 0; i < 3; i++)
 		for (j = 0; j < 10; j++)
 		{
-			if (i == 2 && j == 5)
+			if (i == 2 && j == 4)
 				break;
 			for (k = 0; k < 6; k++)
 				for (l = 0; l < 10; l++)
