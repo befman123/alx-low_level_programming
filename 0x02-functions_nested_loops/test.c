@@ -9,8 +9,7 @@
 int main(void)
 {
 
-	printf("%d \n", _abs(1));
-	printf("%d \n", _abs(0));
+	printf("%d \n", print_last_digit(98));
 
 	return (0);
 }
