@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    add(89, 9);
+    print_to_98(-10);
 
     return (0);
 }
