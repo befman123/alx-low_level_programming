@@ -16,7 +16,10 @@
 			if (mul < 10)
 			{
 				if (j != 0)
+				{
 					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar(mul + '0');
 			}
 			if (mul >= 10 && mul < 100)
@@ -25,6 +28,8 @@
 
 				int div = mul / 10;
 
+				if (j != 0)
+					_putchar(' ');
 				_putchar(div + '0');
 				_putchar(mod + '0');
 			}
