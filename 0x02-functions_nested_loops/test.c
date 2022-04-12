@@ -7,10 +7,7 @@
  */
 int main(void)
 {
-	int a;
-
-	a = _islower('A');
-	_putchar(a + '0');
+	jack_bauer();
 
 	return (0);
 }
