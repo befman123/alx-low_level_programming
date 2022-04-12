@@ -37,7 +37,7 @@
 				_putchar(div % 10 + '0');
 				_putchar(mod + '0');
 			}
-			if (j != n)
+			if (j != (n - 1))
 			{
 				_putchar(44);
 				_putchar(' ');
