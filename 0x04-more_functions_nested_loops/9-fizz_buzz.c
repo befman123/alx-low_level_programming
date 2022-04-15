@@ -2,7 +2,7 @@
 /*
  *fizz buzz if they ask me this on ajob interview
  *they should pay me more for wasting my time
- */void main(void)
+ */int main(void)
 {
 	int i;
 
@@ -21,4 +21,6 @@
 			printf("%d ", i);
 	}
 	putchar('\n');
+
+	return (0);
 }
