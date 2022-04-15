@@ -14,13 +14,13 @@
 			{
 				if (i == j)
 					_putchar(92);
-				else if (j > i)
+				if (j > i)
 				{
 					_putchar('\n');
-					continue;
+					break;
 				}
-				else
-					_pitchar(' ');
+				if (j < i)
+					_putchar(' ');
 			}
 		}
 		_putchar('\n');
