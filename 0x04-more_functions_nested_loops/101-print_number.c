@@ -22,8 +22,16 @@
 				prnt_flag = 1;
 			if (prnt_flag == 1)
 			{
-				_putchar((n / d) / -1 + '0');
-				n %= d;
+				if (n < 0)
+				{
+					_putchar((n / d) / -1 + '0');
+					n %= d;
+				}
+				else
+				{
+					_putchar((n / d)  + '0');
+					n %= d;
+				}
 			}
 			d /= 10;
 		}
