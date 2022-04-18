@@ -3,11 +3,14 @@
  *Prints a string in reverse
  */void print_rev(char *c)
 {
-	int str_len = _strlen(c);
+	int i = 0;
 
-	for (; str_len >= 0; str_len--)
+	while (*(c + i) != 0)
+		i++;
+
+	for (; i >= 0; i--)
 	{
-		_putchar(*(c + str_len));
+		_putchar(*(c + i));
 	}
 	_putchar('\n');
 }
