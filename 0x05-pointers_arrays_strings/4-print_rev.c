@@ -12,4 +12,5 @@
 	{
 		_putchar(*(c + i));
 	}
+	_putchar('\n');
 }
