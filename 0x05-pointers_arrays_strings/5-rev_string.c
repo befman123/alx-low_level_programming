@@ -12,16 +12,6 @@
 	return (i);
 }
 /*
- *Swap values
- */void swap(char a, char b)
-{
-	char temp;
-
-	temp = a;
-	a = b;
-	b = temp;
-}
-/*
  *Ammend in reverse
  */void rev_string(char *c)
 {
@@ -29,7 +19,7 @@
 	int j;
 	char temp;
 
-	for (i = 0, j = 8; i < j; j--, i++)
+	for (i = 0, j = _strlen(c) - 1; i < j; j--, i++)
 	{
 		if (i == j)
 			continue;
