@@ -14,5 +14,6 @@ void puts2(char *);
 void puts_half(char *);
 void print_number(int);
 void print_array(int *, int n);
+char *_strcpy(char *, char *);
 
 #endif /* MAIN_H */
