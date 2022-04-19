@@ -16,9 +16,11 @@
 {
 	int i;
 
-	for (i = (_strlen(str) - 1) / 2; i >= 0; i++)
+	i = (_strlen(str) - 1) / 2;
+	while (i < _strlen(str) - 1)
 	{
 		_putchar(*(str + i));
+		i++;
 	}
 	_putchar('\n');
 }
