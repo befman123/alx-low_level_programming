@@ -19,8 +19,8 @@
 	i = (_strlen(str) - 1) / 2;
 	while (i < _strlen(str))
 	{
-		_putchar(*(str + i));
 		i++;
+		_putchar(*(str + i));
 	}
 	_putchar('\n');
 }
