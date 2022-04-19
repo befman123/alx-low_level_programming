@@ -12,5 +12,7 @@ void _puts(char *);
 void rev_string(char *);
 void puts2(char *);
 void puts_half(char *);
+void print_number(int);
+void print_array(int *, int n);
 
 #endif /* MAIN_H */
