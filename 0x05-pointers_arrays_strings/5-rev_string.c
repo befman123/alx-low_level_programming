@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /*
  *Returns the length of a character array
  */int _strlen(char *s)
