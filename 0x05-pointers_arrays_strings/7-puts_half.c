@@ -17,7 +17,7 @@
 	int i;
 
 	i = (_strlen(str) - 1) / 2;
-	while (i < _strlen(str))
+	while (i < _strlen(str) - 1)
 	{
 		i++;
 		_putchar(*(str + i));
