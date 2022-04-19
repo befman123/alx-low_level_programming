@@ -16,7 +16,7 @@
 {
 	int i;
 
-	for (i = 0; i < _strlen(str) - 1; i + 2)
+	for (i = 0; i < _strlen(str) - 1; i += 2)
 	{
 		_putchar(*(str + i));
 	}
