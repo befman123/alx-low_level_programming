@@ -44,5 +44,13 @@
 	int i;
 
 	for (i = n - 1; i >= 0; i--)
+	{
 		print_number(a[i]);
+		if (i != 0)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	_putchar('\n');
 }
