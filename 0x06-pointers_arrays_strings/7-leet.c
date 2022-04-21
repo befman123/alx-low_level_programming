@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /*
  *Encode a string into 1337
  */char *leet(char *s)
@@ -9,7 +9,7 @@
 	int j;
 
 	checklist = "aeotl";
-	replacelist = "43071"
+	replacelist = "43071";
 	i = 0;
 	while (*(s + i) != 0)
 	{
@@ -21,7 +21,9 @@
 			{
 				*(s + i) = *(replacelist + j);
 			}
+			j++;
 		}
+		i++;
 	}
 	return (s);
 }
