@@ -18,10 +18,13 @@
 	int i;
 	int slen;
 
-	slen = _strlen(s);
-	for (i = 0; i < slen; i++)
-		if (*(s + i) == c)
-			return (s + i);
+	if (s != NULL)
+	{
+		slen = _strlen(s);
+		for (i = 0; i < slen; i++)
+			if (*(s + i) == c)
+				return (s + i);
+	}
 
 	return (NULL);
 }
