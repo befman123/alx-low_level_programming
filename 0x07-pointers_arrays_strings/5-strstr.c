@@ -21,7 +21,7 @@
 	int nlen;
 
 	nlen = _strlen(h) - _strlen(n);
-	if (nlen > 0)
+	if (_strlen(n) != 0 && nlen >= 0)
 	{
 		for (i = 0; i < nlen + 1; i++)
 		{
