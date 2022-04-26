@@ -21,7 +21,7 @@
 	if (s != NULL)
 	{
 		slen = _strlen(s);
-		for (i = 0; i < slen; i++)
+		for (i = 0; i < slen + 1; i++)
 			if (*(s + i) == c)
 				return (s + i);
 	}
