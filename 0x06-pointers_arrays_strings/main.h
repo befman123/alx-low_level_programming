@@ -1,12 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stdio.h>
 
-void _putchar(int);
-int _strlen(char *);
-char *_strcat(char *, char*);
+void _putchar(char);
+void print_number(int);
+char *_strcat(char *, char *);
 char *_strncat(char *, char *, int);
 char *_strncpy(char *, char *, int);
 int _strcmp(char *, char *);
+void reverse_array(int *, int);
+char *string_toupper(char *);
+int _islower(char);
+char *cap_string(char *);
+char *leet(char *);
 
 #endif

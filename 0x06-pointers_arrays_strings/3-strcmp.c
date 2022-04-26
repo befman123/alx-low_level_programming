@@ -23,23 +23,7 @@
 	retval = 0;
 	s1len = _strlen(s1);
 	s2len = _strlen(s2);
-	if (s1len < s2len)
-	{
-		int j;
-
-		for (j = 0; j < (s2len - s1len); j++)
-			*(s1 + j + s1len) = '\0';
-		s1len = sizeof(s1) / 8;
-	}
-	else if (s2len < s1len)
-	{
-		int j;
-
-		for (j = 0; j < (s1len - s2len); j++)
-			*(s2 + s2len + j) = '\0';
-		s2len = sizeof(s2) / 8;
-	}
-	while (retval == 0 && i < s1len)
+	while (retval == 0 && (i < s1len || i < s2len))
 	{
 		retval += (*(s1 + i) - *(s2 + i));
 		i++;
