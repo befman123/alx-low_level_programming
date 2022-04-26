@@ -11,4 +11,5 @@ char *_strpbrk(char *, char *);
 char *_strstr(char *, char *);
 void print_diagsums(int *, int);
 void print_chessboard(char (*)[8]);
+void set_string(char **, char *);
 #endif
