@@ -15,11 +15,7 @@
 				{
 					if (i == j && j == k && k == l)
 						continue;
-					if (k > 0 && l < k)
-						continue;
-					if (j > 0 && k < j)
-						continue;
-					if (i > 0 && j < i)
+					if (((i * 10) + j) > ((k * 10) + l))
 						continue;
 					putchar(48 + i);
 					putchar(48 + j);
