@@ -1,39 +1,36 @@
 #include <stdio.h>
 /*
- *Print unique combinations of 3 of numbers 0-9
+ *testing my algo
  */int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int i, j, k, l;
 
-	for (i = 48; i < 58; i++)
-		for (j = 48; j < 58; j++)
-			for (k = 48; k < 58; k++)
-				for (l = 48; l < 58; l++)
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; j < 10; j++)
+		{
+			for (k = 0; k < 10; k++)
+			{
+				for (l = 0; l < 10; l++)
 				{
-					if ((i == j && l > k) || (k == l &&
-					j > i))
-					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(l);
-						if (i == 57 && j == 56)
-						{
-							if (k == 57 && j == 57)
-								continue;
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					if (i == j && j == k && k == l)
+						continue;
+					if (k > 0 && l < k)
+						continue;
+					if (j > 0 && k < j)
+						continue;
+					if (i > 0 && j < i)
+						continue;
+					putchar(48 + i);
+					putchar(48 + j);
+					putchar(32);
+					putchar(48 + k);
+					putchar(48 + l);
+					putchar(44);
 				}
-	putchar('\n');
-
+			}
+		}
+	}
+	putchar(10);
 	return (0);
 }
