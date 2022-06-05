@@ -25,7 +25,10 @@
 					if (i == 9 && j == 8 && k == 9 && l == 9)
 						continue;
 					else
+					{
 						putchar(44);
+						putchar(32);
+					}
 				}
 			}
 		}
