@@ -13,9 +13,9 @@
 			{
 				for (l = 0; l < 10; l++)
 				{
-					if (i == j && j == k && k == l)
-						continue;
 					if (((i * 10) + j) > ((k * 10) + l))
+						continue;
+					if (((i * 10) + j) == ((k * 10) + l))
 						continue;
 					putchar(48 + i);
 					putchar(48 + j);
