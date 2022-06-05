@@ -22,7 +22,10 @@
 					putchar(32);
 					putchar(48 + k);
 					putchar(48 + l);
-					putchar(44);
+					if (i == 9 && j == 8 && k == 9 && l == 9)
+						continue;
+					else
+						putchar(44);
 				}
 			}
 		}
