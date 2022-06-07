@@ -1,10 +1,10 @@
 #include "main.h"
 /*
  *Print integers using _putchar
- */void print_number(int n)
+ */void print_number(long n)
 {
 	short prnt_flag = 0;
-	int d = 1000000000;
+	long d = 1000000000000;
 
 	if (n == 0)
 	{
@@ -42,29 +42,27 @@
  * by a new line
  */int main(void)
 {
-	int i;
-	int feb;
-	int last;
+	long feb;
+	long last;
+	long sum;
 
-	last = 2;
-	feb = 1;
-	for (i = 0; i < 50; i++)
+	last = 1;
+	feb = 2;
+	sum = 2;
+	while (feb < 4000000)
 	{
-		int temp;
+		long temp;
 
 		temp = feb;
 		feb += last;
 		last = temp;
-		print_number(feb);
-		if (i != 49)
+		if (feb % 2 == 0)
 		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar('\n');
+			sum += feb;
 		}
 	}
+	print_number(sum);
+	_putchar('\n');
+
 	return (0);
 }
