@@ -6,7 +6,7 @@
 	unsigned long i;
 
 	i = 2;
-	while(i < a)
+	while (i < a)
 	{
 		if (a % i == 0)
 			return (0);
