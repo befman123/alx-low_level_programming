@@ -15,5 +15,8 @@ void puts_half(char *);
 void print_number(int);
 void print_array(int *, int n);
 char *_strcpy(char *, char *);
+int _isdigit(char);
+int ten_raised_to(int);
+int _atoi(char*);
 
 #endif /* MAIN_H */
