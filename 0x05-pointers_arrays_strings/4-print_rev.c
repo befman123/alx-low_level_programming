@@ -23,5 +23,5 @@
 		_putchar(*(S + len));
 		len--;
 	}
-	_putchar("\n");
+	_putchar('\n');
 }
