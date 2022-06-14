@@ -16,7 +16,7 @@
 {
 	int len;
 
-	len = _strlen(S);
+	len = _strlen(S) - 1;
 
 	while (len >= 0)
 	{
