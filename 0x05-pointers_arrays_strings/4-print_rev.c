@@ -16,11 +16,11 @@
 {
 	int len;
 
-	len = _strlen(s);
+	len = _strlen(S);
 
 	while (len >= 0)
 	{
-		_putchar(*(s + len));
+		_putchar(*(S + len));
 		len--;
 	}
 }
