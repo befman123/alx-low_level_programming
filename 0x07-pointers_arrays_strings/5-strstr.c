@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /*
  *Returns the length of a character array
  */int _strlen(char *s)
@@ -15,10 +16,8 @@
  */char *_strstr(char *haystack, char *needle)
 {
 	int i;
-	int start;
 	int diff;
 
-	start = 0;
 	diff = _strlen(haystack) - _strlen(needle);
 	for (i = 0; i < diff + 1; i++)
 	{
@@ -37,4 +36,5 @@
 				break;
 		}
 	}
+	return (NULL);
 }
