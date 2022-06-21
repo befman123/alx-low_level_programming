@@ -20,23 +20,18 @@
 
 	diff = _strlen(haystack) - _strlen(needle);
 	if (diff < 0 || haystack == NULL || needle == NULL)
-		return (NULL);
+		return 0;
 	for (i = 0; i < diff + 1; i++)
 	{
 		int j;
 
-		j = 0;
-		while (*(needle + j) != '\0')
+		for (j = 0; j < _strlen(needle) + 1; j++)
 		{
-			if (*(needle + j) == *(haystack + i + j))
-			{
-				j++;
-				if (*(needle + j) == '\0')
-					return (haystack + i);
-			}
-			else
+			if (*(needle + j) != *(haystack + i + j))
 				break;
+			else if (j == _strlen(needle))
+				return (haystack + i);
 		}
 	}
-	return (NULL);
+	return 0;
 }
