@@ -25,12 +25,15 @@
 	{
 		int j;
 
-		for (j = 0; j < _strlen(needle) + 1; j++)
+		for (j = 0; j < _strlen(needle); j++)
 		{
-			if (*(needle + j) != *(haystack + i + j))
+			if (*(needle + j) == *(haystack + i + j))
+			{
+				if (j == _strlen(needle) - 1)
+					return (haystack + i);
+			}
+			else
 				break;
-			else if (j == _strlen(needle))
-				return (haystack + i);
 		}
 	}
 	return (NULL);
