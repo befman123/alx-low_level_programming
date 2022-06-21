@@ -20,7 +20,7 @@
 
 	diff = _strlen(haystack) - _strlen(needle);
 	if (diff < 0 || haystack == NULL || needle == NULL)
-		return (0);
+		return (NULL);
 	for (i = 0; i < diff + 1; i++)
 	{
 		int j;
@@ -33,5 +33,5 @@
 				return (haystack + i);
 		}
 	}
-	return (0);
+	return (NULL);
 }
