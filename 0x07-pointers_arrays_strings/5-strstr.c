@@ -7,7 +7,7 @@
 	int i = 0;
 
 	while (*(s + i) != '\0')
-		i++;
+	        i++;
 
 	return (i);
 }
@@ -19,8 +19,8 @@
 	int diff;
 
 	diff = _strlen(haystack) - _strlen(needle);
-	if (diff < 0 || haystack == NULL || needle == NULL)
-		return (NULL);
+	if (_strlen(needle) == 0)
+		return (haystack);
 	for (i = 0; i < diff + 1; i++)
 	{
 		int j;
