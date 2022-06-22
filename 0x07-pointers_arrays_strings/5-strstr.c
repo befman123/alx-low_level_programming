@@ -21,6 +21,8 @@
 	diff = _strlen(haystack) - _strlen(needle);
 	if (_strlen(needle) == 0)
 		return (haystack);
+	if (diff < 0)
+		return (NULL);
 	for (i = 0; i < diff + 1; i++)
 	{
 		int j;
