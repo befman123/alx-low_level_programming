@@ -20,7 +20,15 @@
 	else if (!_isdigit(argv[1]) || !_isdigit(argv[2]))
 		printf("Error\n");
 	else
-		printf("%d\n", atoi(argv[1]) + atoi(argv[2]));
+	{
+		int i;
+		int sum;
+
+		sum = 0;
+		for (i = 1; i < argc; i++)
+			sum += atoi(argv[i]);
+		printf("%d\n", sum);
+	}
 
 	return (0);
 }
