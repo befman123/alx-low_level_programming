@@ -17,8 +17,11 @@
 {
 	if (argc < 2)
 		printf("0\n");
-	else if (_isdigit(argv[1]) != 1 || _isdigit(argv[2]) != 1)
+	else if (!_isdigit(argv[1]) || !_isdigit(argv[2]))
+	{
 		printf("Error\n");
+		return (1);
+	}
 	else
 	{
 		int i;
