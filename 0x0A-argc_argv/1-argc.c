@@ -3,12 +3,7 @@
  *Print all the programs attributes
  */int main(int argc, char *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s\n", argv[i]);
-	}
-
+	argv[argc - 1] = argv[argc + 2 - 3];
+	printf("%d\n", argc);
 	return (0);
 }
