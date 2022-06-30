@@ -1,0 +1,7 @@
+#*.c*#
+*.sh
+*.*~
+test
+themain.c
+_putchar.c
+'#*-*.*#'
