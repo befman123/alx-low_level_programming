@@ -16,13 +16,13 @@
 			free(ptr);
 			return (p);
 		}
-		if (new_size == old_size)
-			return (ptr);
 		if (new_size == 0 && ptr != NULL)
 		{
 			free(ptr);
 			return (NULL);
 		}
+		if (new_size == old_size)
+			return (ptr);
 		for (i = 0; i < old_size && i < new_size; i++)
 		{
 			*(p + i) = *(pt + i);
