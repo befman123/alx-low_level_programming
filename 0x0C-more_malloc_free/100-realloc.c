@@ -8,7 +8,7 @@
 	unsigned int i;
 
 	if (new_size == 0 && ptr != NULL)
-        {
+	{
 		free(ptr);
 		return (NULL);
 	}
