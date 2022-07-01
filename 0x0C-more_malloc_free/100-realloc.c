@@ -12,7 +12,10 @@
 	if (p != NULL)
 	{
 		if (ptr == NULL)
+		{
+			free(ptr);
 			return (p);
+		}
 		if (new_size == old_size)
 			return (ptr);
 		if (new_size == 0 && ptr != NULL)
