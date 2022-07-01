@@ -9,16 +9,19 @@
 
 	p = (char *)malloc(new_size);
 	pt = (char *)ptr;
-	if (ptr == NULL)
-		return (p);
-	if (new_size == 0 && ptr != NULL)
+	if (p != NULL)
 	{
-		free(ptr);
-		return (NULL);
-	}
-	for (i = 0; i < old_size && i < new_size; i++)
-	{
-		*(p + i) = *(pt + i);
+		if (ptr == NULL)
+			return (p);
+		if (new_size == 0 && ptr != NULL)
+		{
+			free(ptr);
+			return (NULL);
+		}
+		for (i = 0; i < old_size && i < new_size; i++)
+		{
+			*(p + i) = *(pt + i);
+		}
 	}
 	return (p);
 }
