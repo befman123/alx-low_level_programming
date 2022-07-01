@@ -23,7 +23,7 @@
 			free(ptr);
 			return (NULL);
 		}
-		for (i = 0; i < old_size && i < new_size; i++)
+		for (i = 0; i < old_size || i < new_size; i++)
 		{
 			*(p + i) = *(pt + i);
 		}
