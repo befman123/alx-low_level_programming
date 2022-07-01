@@ -7,27 +7,25 @@
 	char *p, *pt;
 	unsigned int i;
 
+	if (new_size == 0 && ptr != NULL)
+        {
+		free(ptr);
+		return (NULL);
+	}
+	if (new_size == old_size)
+		return (ptr);
 	p = (char *)malloc(new_size);
 	pt = (char *)ptr;
-	if (p != NULL)
+	if (ptr == NULL)
 	{
-		if (ptr == NULL)
-		{
-			free(ptr);
-			return (p);
-		}
-		if (new_size == 0 && ptr != NULL)
-		{
-			free(ptr);
-			return (NULL);
-		}
-		if (new_size == old_size)
-			return (ptr);
+		free(ptr);
+		return (p);
+	}
+	else
 		for (i = 0; i < old_size && i < new_size; i++)
 		{
 			*(p + i) = *(pt + i);
 		}
-		free(ptr);
-	}
+	free(ptr);
 	return (p);
 }
