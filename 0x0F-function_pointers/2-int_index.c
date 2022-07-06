@@ -8,7 +8,7 @@
 
 	if (cmp == NULL)
 		exit(98);
-	if (size <= 0 || array == NULL)
+	if (size <= 0)
 		return (-1);
 	for (i = 0; i < size; i++)
 	{
