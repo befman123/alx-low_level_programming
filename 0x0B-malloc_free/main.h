@@ -2,6 +2,7 @@
 #define MAIN_H
 
 void _putchar(char);
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int, char);
+char *_strdup(char*);
 
 #endif
