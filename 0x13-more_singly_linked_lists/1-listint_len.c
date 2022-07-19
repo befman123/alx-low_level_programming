@@ -4,7 +4,7 @@
  *Print the number of elements in a linked list
  */size_t listint_len(const listint_t *h)
 {
-	int i;
+	unsigned long i;
 
 	i = 0;
 	if (h == NULL)
