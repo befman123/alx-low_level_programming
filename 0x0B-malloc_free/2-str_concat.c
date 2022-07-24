@@ -24,6 +24,8 @@
 	lens1 = _strlen_recursion(s1);
 	lens2 = _strlen_recursion(s2);
 	ret = (char *)malloc(lens1 + lens2 + 1);
+	if (ret == NULL)
+		return (NULL);
 	for (i = 0; i < lens1; i++)
 	{
 		*(ret + i) = *(s1 + i);
