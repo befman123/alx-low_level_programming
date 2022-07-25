@@ -9,16 +9,18 @@
 	if (height <= 0 || width <= 0)
 		return (NULL);
 	ret = malloc(sizeof(int *) * height);
-	if (ret == NULL)
-		return (NULL);
-	for (j = 0; j < height; j++)
+	if (ret != NULL)
 	{
-		array = (int *)malloc(sizeof(int) * width);
-		if (array == NULL)
-			return (NULL);
-		for (i = 0; i < width; i++)
-			*(array + i) = 0;
-		*(ret + j) = array;
+		for (j = 0; j < height; j++)
+		{
+			array = (int *)malloc(sizeof(int) * width);
+			if (array == NULL)
+				return (NULL);
+			for (i = 0; i < width; i++)
+				*(array + i) = 0;
+			*(ret + j) = array;
+		}
+		return (ret);
 	}
-	return (ret);
+	return (NULL);
 }
