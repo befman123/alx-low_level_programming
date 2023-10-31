@@ -4,5 +4,7 @@
 #include <stdlib.h>
 char *create_array(unsigned int, char);
 int _putchar(char);
+char **strtow(char *);
+char *_strdup(char *);
 
 #endif
