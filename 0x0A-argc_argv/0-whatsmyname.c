@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 	if (argc > 0)
 		for (i = 0; i < _strlen_recursion(argv[0]); i++)
 			_putchar(*(argv[0] + i));
+	_putchar('\n');
 	return (0);
 }
 /**
