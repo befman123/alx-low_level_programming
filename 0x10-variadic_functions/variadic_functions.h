@@ -1,6 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char);
+
+#include <stdarg.h>
+#include <stdio.h>
+void print_numbers(const char *, const unsigned int n, ...);
 
 #endif
